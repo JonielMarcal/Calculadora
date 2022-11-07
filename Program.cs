@@ -16,11 +16,11 @@ namespace Calculadora
             Console.WriteLine("2 - Subtrair");
             Console.WriteLine("3 - Multiplicar");
             Console.WriteLine("4 - Dividir");
-            Console.WriteLine("5 - Sair");
+            Console.WriteLine("0 - Sair");
 
             Console.WriteLine("------------------------------");
 
-            Console.WriteLine("Selecionae a Opção Desejada");
+            Console.WriteLine("Selecione a Opção Desejada");
             short res = short.Parse(Console.ReadLine());
 
             switch (res)
@@ -29,14 +29,11 @@ namespace Calculadora
                 case 2: Subtrair(); break;
                 case 3: Multiplicar(); break;
                 case 4: Dividir(); break;
-                case 5: System.Environment.Exit(0); break;
+                case 0: System.Environment.Exit(0); break;
                 default: Menu(); break;
-
             }
-
-
-
         }
+
         static void Somar()
         {
             Console.Clear();
@@ -80,8 +77,6 @@ namespace Calculadora
             Console.WriteLine($"O resultado da MULTIPLICAÇÂO é: {v1 * v2}");
             Console.ReadKey();
             Menu();
-
-
         }
         static void Dividir()
         {
@@ -96,10 +91,7 @@ namespace Calculadora
             Console.WriteLine($"O Resultado da Divisao é: {v1 / v2} ");
             Console.ReadKey();
             Menu();
-
-
         }
-
 
     }
 }
