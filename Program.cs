@@ -45,7 +45,20 @@ namespace Calculadora
             float v2 = float.Parse(Console.ReadLine());
 
             Console.WriteLine($"O resultado da MULTIPLICAÇÂO é: {v1 * v2}");
-            // Interpolação, realizando a Multiplicação dentro das chaves, sem declarar variavel.
+
+
+        }
+        static void Divisao()
+        {
+            Console.Clear();
+            Console.WriteLine("Informe o Primeiro Valor: ");
+            float v1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o Segundo Valor: ");
+            float v2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine($"O Resultado da Divisao é: {v1 / v2} ");
+
 
         }
 
