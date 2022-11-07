@@ -5,7 +5,26 @@ namespace Calculadora
     {
         public static void Main(string[] args)
         {
-            Multiplicacao();
+            Menu();
+        }
+        static void Menu()
+        {
+            Console.Clear();
+
+            Console.WriteLine(" CALCULADORA ");
+            Console.WriteLine("1 - Somar");
+            Console.WriteLine("2 - Subtrair");
+            Console.WriteLine("3 - Multiplicar");
+            Console.WriteLine("4 - Dividir");
+
+            Console.WriteLine("------------------------------");
+
+            Console.WriteLine("Selecionae a Opção Desejada");
+            short res = short.Parse(Console.ReadLine());
+
+
+
+
 
         }
         static void Somar()
@@ -51,6 +70,7 @@ namespace Calculadora
         static void Divisao()
         {
             Console.Clear();
+
             Console.WriteLine("Informe o Primeiro Valor: ");
             float v1 = float.Parse(Console.ReadLine());
 
